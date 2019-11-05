@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(81, 64, 92);
+    color: #fcffd9;
+}
+
+h1 {
+    width: 40%;
+    margin-left: 30%;
+    text-align: center;
+    font-size: 2.5em;
+    border-bottom: 2px solid #b133d8;
+}
+
+dt {
+  width: 8em;
+  font-size: 1.8em;
+  border-bottom: 2px solid #b133d8;
+}
+
+dt.default {
+  width: auto;
+  font-size: 1em;
+  border: none;
+}
+
+b {
+  color: #b133d8;
+}
+
+ul.square {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+ul.image {
+    list-style-image: url("img/my-bullet.png");
+}
+
+ol {
+  list-style: upper-roman;
+  list-style-position: outside;
+}
+
+table {
+  border: 1px dotted black;
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px dotted black;
+}
+
+td {
+  border-top: 1px dotted black;
+  border-bottom: 1px dotted black;
+}
+
+p.round {
+  border: 1px solid red;
+  border-radius: 8px;
+}

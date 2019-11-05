@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="description" content="a cheat sheet">
+        <meta name="keywords" content="cheat, sheet">
+        <link rel="stylesheet" href="style.css">
+
+        <title>Cheat Sheet</title>
+    </head>
+
+    <body>
+        <h1>Cheat Sheet</h1>
+
+        <dl>
+          <dt>WorldWideWeb</dt>
+          <dd>- The technologies that made the world wide a succes where HTML and the elements it works with:
+    			<b>Hypertext/Hypermedia </b>
+    			(which is are just texts, images and audios with Hyperlinks),
+    			<b>Hyperlinks </b>
+    			(which are just clickable refrences to another file )</dd>
+          <dd>- <b>Hypermedia</b>
+    			 and other Hypertext formats
+    			are the most important resources of HTML</dd>
+
+          <dt>URL</dt>
+          <dd>- is made of a:
+            <ul>
+        			<li><b>scheme/protocol</b> (example http)</li>
+        			<li>(just needed if the site isn't on your Computer)infos about the <b>host</b>, it isn't needed if it is a domain name or the ip and port</li>
+        			<li>the <b>path to the document</b></li>
+        			<li>(optional) the <b>query</b> stands <b>after a ?</b> and each major information is seperated by a &, the information is mostly created on the fly by the user</li>
+        			<li>(optional) <b>fragments stand after a #</b> and are a string of numbers which send the user to a certain part of the webpage</li>
+        		</ul></dd>
+
+            <dt>WebServer</dt>
+            <dd>- A webserver is a server which has webserver software installed, stores webpages and lets clients request or upload files</dd>
+            <dd>- It's stores its content on a normal file path on some drive, and the content mostly consist of Html files and other media</dd>
+
+            <dt>WebClient</dt>
+            <dd>- A web client is a software which allows users to acces webservers and request/upload files</dd>
+            <dd>- And a web client is
+      			<strong>basically the same as a WebBrowser</strong>
+      			,they both just send requests through http.</dd>
+            <br>
+
+            <dt>HTML Basics</dt>
+            <dd>Most elements have a starting tag and an end tag which is has a / before the tag beginning, but some elements which are called
+        		   void elements don't have a ending tag like the break tag. <br>
+        			 Most elements also have attributes which are just more info about how and what is displayed, like a refrence, description or style. You write those attributes inside the starting tag(attributeName = "attribute")</dd>
+            <dd>- because HTML 5 isn't based on SGML anymore !Doctype isn't needed, but most people still write it so that the browser knows which document to expect</dd>
+            <ul>
+        			<li>the html element, which divines where the html code is</li>
+        			<li>the head element, where meta data(the used character system), css style and the title are defined</li>
+        			<li>style defines the look of the website and is used to give a specific element a unique look</li>
+        			<li>meta is used to define which character set and other tags or descriptions for a search engine</li>
+        			<li>title is just the name of the page which the browser displays</li>
+        			<li>the body stores everything non meta of the website</li>
+        			<li>h1-6 are just headlines which get smaller and less significant by the number</li>
+        			<li>p is just a simple way to write normal text</li>
+        			<li>a stores a link on the written text or often it is also stored inside a picture</li>
+        			<li>
+        				img displays a image in the file system or another server(just the address of the server and the location of the image) or a description of the image, if the browser couldn't load the image correclty</li>
+        			<li>pre is just like paragraph but it doesn't ignore linefeeds and stuff</li>
+        			<li>ul/ol are simple list which can be un/sorted and each list point is inside a li tag</li>
+        			<li>article/section are used to catigorize the website</li>
+        		</ul>
+
+            <dt>CSS basics</dt>
+            <dd> - The use of CSS is to make websites look nicer they do that with colours(which can be implied with the name or hexcolours(#ffafff)) fonts <br>
+        			changing the background(which can also be done for the individual texts, which looks like this)and many other things</dd>
+            <dd> - CSS is often applied through the attributes of a html element, but it is often used inside the style tags(which are just assign proberties of the element which are seperated by a ';'), where a single element or grouping canvas
+        		be targeted</dd>
+            <dd>- pseudo classes are special ways to interact with the element with things like:
+              <ul>
+                <li>link(unvisited link)</li>
+                <li>visited</li>
+                <li>hover(user cursor is above element/link)</li>
+                <li>active(user is clicking on link)</li>
+                <li>first-child(first instance)</li>
+              </ul>
+            </dd>
+
+            <dd>Combinators:
+              <ul>
+                <li> " " selects everything inside the grouping</li>
+                <li> > selects only direct elements inside the grouping</li>
+                <li> + selects the first instace of the element after the grouping</li>
+                <li> ~ selects every instance of the element which is after the grouping and not inside the grouping</li>
+              </ul>
+            </dd>
+
+            <dt>Lists</dt>
+            <dd>- A list is can be numbered(ol) or unnumbered(ul) and each point is inside the li tag</dd>
+            <dd>- There is also a description list(dl) with points(dt)that are all described(dd)</dd>
+            <dd>- Of course you can also put a list inside another list</dd>
+            <h3>CSS</h3>
+            <dd>with CSS you can change:
+              <ul>
+                <li>the bullet point(list-style-type)</li>
+                <li>set the bullet as an image(list-style-image)</li>
+                <li>position the bullet point inside/outside the list(list-style-position: inside/outside;)</li>
+                <li>and reset the style(list-style-type:none; margin:0; padding:0;)</li>
+              </ul>
+            </dd>
+
+            <dt>Tables</dt>
+            <dd>- you define a table(table) through writing int the single rows(tr) the individual headers(th) or normal cells(td)</dd>
+            <dd>- to add a caption you just need to use the caption element</dd>
+            <dd>- if you want to have a cell span for multiple rows/cols you just need to add a row/colspan="n" inside the starting tag of th/td</dd>
+            <h3>CSS</h3>
+            <dd>the with or the height are specified through pixels or percent and each element can be given a specific with and height</dd>
+            <dd>- to make a striped table you just need to use the tr:nth-child(even/odd) pseude-class</dd>
+            <dd>to add a border the border property is used and if the table mustn't have double boarders the property(just borders the single element) border-collapse: collapse should be used inside the table tag</dd>
+            <h4>Borders</h4>
+              <ul>
+                <li>the style(boarder-style) of a boarder decides how a boarder looks(dotted, solid,double ...)</li>
+                <li>you can also set the width(border-width) through the common measurements in css and the colour(border-color) through hex, name, ...</li>
+                <li>all sites can also be accessed individualy (border-top, ...) or with the style attribute there can be diffrent input which are set from the top to left</li>
+                <li>there is also a shortcut for borders border: 5px(width) solid(style) red(colour);</li>
+                <li>to make borders round there is the border-radius property which will make the border rounder the larger the number is(0px are normal borders)</li>
+              </ul>
+
+	      <dt>Classes and ID</dt>
+        <dd>- element.class to select a specific class</dd>
+        <dd>- to define an id just type element#idName</dd>
+        <dd>- to address them you just need to write the id/class="name" attribute inside the starting tag of the defined element</dd>
+        <dd>- to have an element with two classes just write inside the quotes more classes seperated with spaces</dd>
+
+        <dt>Float and Box Model</dt>
+        <dd>- every Css element can be seen as a box with padding, border, margin and content</dd>
+        <img src="img/CssBox.png" alt="Css box-model visualized" style="float: right;" width="30%" height="20%">
+        <dd>- the height and width attribute are just for the content</dd>
+        <br>
+        <h3>float</h3>
+        <dd>- <b>float</b>(float: left/right) is used to have a element beside another one if you want it to behave normal use float:none;</dd>
+        <dd>- you can also line up boxes horizontally: let every box be of equal height and just set the width to what you want</dd>
+        <dd>- use <b>clear</b>(clear: left/right) to let nothing stand beside this element</dd>
+        <dd>
+          - if an element is taller than the element it is inside of it will overflow to prevent this you should use:
+          <ul>
+            <li>overflow: auto</li>
+            <li>
+              or the more reliable way: <br>
+                .clearfix::after { <br>
+                  content: ""; <br>
+                  clear: both; <br>
+                  display: table; <br>
+                }
+            </li>
+          </ul>
+        </dd>
+        </dl>
+    </body>
+</html>
